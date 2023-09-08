@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(172, 172, 172);
+    color: white;
+    box-shadow: 0px 4px 14px 2px rgba(0,0,0,0.20);
+}
+
+.head_bar input {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    margin: 6px;
+    padding: 5px;
+}
+
+.head_bar button {
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.head_bar button:hover {
+    background-color: #45a8ff;
+    transition:0.3s;
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.sapa_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 4px 14px 2px rgba(0,0,0,0.20);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* .sapa_section > h2 {
+} */
+
+.sapa_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.sapa_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.sapa_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.sapa_section > form > button {
+    background-color: #45a8ff;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 4px 14px 2px rgba(0,0,0,0.20);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.input_section > h2 {
+    text-align: center;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: #45a8ff;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+
+}
+
+
+.input_section > form > .input > label {
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    /* border: 1px solid black; */
+    box-shadow: 0px 4px 14px 2px rgba(0,0,0,0.20);
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    box-shadow: inset 0px 4px 100px 2px rgba(0,0,0,0.10);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.primary-button {
+    background-color: #45a8ff; 
+    color: #fff; 
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 3px 10px;
+    border: none;
+  }
+  
+  .delete-button {
+    background-color: #ff0000; 
+    color: #fff; 
+    border-radius: 4px;
+    padding: 3px 10px;
+    border: none;
+  }
+
+@media screen and (max-width: 760px) {
+    .head_bar_title {
+        font-size: large;
+    }
+    
+    .head_bar input {
+        border-radius: 5px;
+        border: none;
+        height: 30px;
+        width: 100px;
+        margin: 6px;
+        padding: 5px;
+    }
+    
+    .head_bar button {
+        border-radius: 5px;
+        border: none;
+        height: 30px;
+        padding: 0px 10px;
+        cursor: pointer;
+    }
+
+}
